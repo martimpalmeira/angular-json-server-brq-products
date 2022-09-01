@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Mouse Pad",
+      "price": 16.9
+    },
+    {
+      "id": 2,
+      "name": "Squeeze ",
+      "price": 54.9
+    },
+    {
+      "id": 3,
+      "name": "Caixinha de som",
+      "price": 31.99
+    },
+    {
+      "name": "Notebook Mac Pro",
+      "price": 12000.89,
+      "id": 4
+    },
+    {
+      "name": "Samsung S20+Ultra",
+      "price": 7520.89,
+      "id": 5
+    },
+    {
+      "name": "Caneta BIC Preta",
+      "price": 5.89,
+      "id": 6
+    },
+    {
+      "name": "Notebook ",
+      "price": 2500.99,
+      "id": 7
+    },
+    {
+      "name": "Cadeira Gamer",
+      "price": 1999.55,
+      "id": 8
+    },
+    {
+      "name": "Moletom BRQ",
+      "price": 99.9,
+      "id": 9
+    },
+    {
+      "name": "Camiseta",
+      "price": 31.5,
+      "id": 10
+    }
+  ]
+}
