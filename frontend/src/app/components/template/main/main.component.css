@@ -1,0 +1,17 @@
+app-snap-bar{
+    visibility:hidden;
+    position: fixed;
+    right: -350px;
+    top: 100px;
+    opacity: 0.1;
+    transform: translateX(0px);
+    transition: 500ms;
+    z-index: 1;
+}
+
+.show{
+    visibility: visible;
+    transform: translateX(-370px);
+    transition: 500ms;
+    opacity: 1;
+}

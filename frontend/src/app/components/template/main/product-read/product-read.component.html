@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Ações</th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td class="align-end"> {{p.id}}</td>
+        <td class="align-end">{{p.name}}</td>
+        <td class="align-end">{{p.price | currency: 'BRL'}}</td>
+        <td class="align-end"><a routerLink='/products/update/{{p.id}}'><img src="../../../../../assets/img/editar.png" alt="edit-icon"></a>
+            <a routerLink=""><img src="../../../../../assets/img/excluir.png" alt="trash-icon"></a>
+        </td>
+    </tr>
+</table>

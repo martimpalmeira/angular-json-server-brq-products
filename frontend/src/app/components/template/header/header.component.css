@@ -1,0 +1,30 @@
+header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(224, 224, 224, 0.497);
+    max-height: 80px;
+    box-shadow: 3px 3px 3px grey;
+    color: #df7f26;
+}
+
+a img{
+    width: 100px;
+    margin-right: 25px;
+}
+
+div{
+    display: flex;
+    align-items: center;
+
+}
+
+div img{
+    height: 1.3em;
+    margin-right: 10px;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 700;
+}

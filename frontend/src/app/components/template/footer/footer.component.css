@@ -1,0 +1,26 @@
+footer{
+    background-color: rgba(224, 224, 224, 0.497);
+    height: 60px;
+    color: rgb(72, 72, 72);
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding: 10px;
+
+}
+
+p{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 20px;
+    margin: 0 5px;
+}
+
+span{
+    margin-left: 5px;
+    font-weight: 700;
+}
+

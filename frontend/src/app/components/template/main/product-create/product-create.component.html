@@ -1,0 +1,9 @@
+<section>
+    <form>
+        <h2>Novo produto</h2>
+        <input type="text" placeholder="Nome" [(ngModel)]="product.name" name="name">
+        <input type="number" placeholder="Preço(R$)" [(ngModel)]="product.price" name="price">
+    </form>
+    <button class="save-btn" (click)="createProduct()">Salvar</button>
+    <button class="cancel-btn" (click)="cancel()">Cancelar</button>
+</section>
