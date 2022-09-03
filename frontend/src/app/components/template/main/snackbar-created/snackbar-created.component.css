@@ -1,0 +1,35 @@
+.snackbar{
+    background-color: rgb(78, 167, 70);
+    color: white;
+    height: 60px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.remove-msg{
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-msg:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+img{
+    width: 13px;
+}
+
+
+

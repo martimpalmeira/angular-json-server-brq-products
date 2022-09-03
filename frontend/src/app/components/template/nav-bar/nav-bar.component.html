@@ -1,14 +1,22 @@
 <nav>
-    <div class="home-link">
-        <a routerLink="/">
-            <img src="../../../../../assets/img/home-icon-white.png" alt="">
-            Início
-        </a>
-    </div>
-    <div class="products-link">
-        <a routerLink="/products">
-            <img src="../../../../../assets/img/products-icon.png" alt="">
-            Produtos
-        </a>
-    </div>
+    <ul>
+        <li>
+            <a routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions] = "{exact: true}" >
+                <span>
+                    <img class="home-img" src="../../../../../assets/img/home-icon-white.png" alt="">
+                    <p>Início</p> 
+                </span>
+            </a>
+
+        </li>
+        <li>
+            <a routerLink="/products" routerLinkActive="active" >
+                <span>
+                    <img class="prod-img" src="../../../../../assets/img/products-icon.png" alt="">
+                    <p>Produtos</p> 
+                </span>
+            </a>
+        </li>
+    </ul>
+
 </nav>

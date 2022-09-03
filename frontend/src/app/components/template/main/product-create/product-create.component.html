@@ -1,8 +1,19 @@
 <section>
     <form>
         <h2>Novo produto</h2>
-        <input type="text" placeholder="Nome" [(ngModel)]="product.name" name="name">
-        <input type="number" placeholder="Preço(R$)" [(ngModel)]="product.price" name="price">
+        <div class="form">
+            <input type="text" autocomplete="off" required [(ngModel)]="product.name" name="name" placeholder=" ">
+            <label for="name" class="label-name">
+                <span class="content-name">Name</span>
+            </label>
+           
+        </div>
+        <div class="form">
+            <input type="number" autocomplete="off" [(ngModel)]="product.price" name="price" placeholder=" ">
+            <label for="name" class="label-name">
+                <span class="content-name">Preço</span>
+            </label>
+        </div>
     </form>
     <button class="save-btn" (click)="createProduct()">Salvar</button>
     <button class="cancel-btn" (click)="cancel()">Cancelar</button>

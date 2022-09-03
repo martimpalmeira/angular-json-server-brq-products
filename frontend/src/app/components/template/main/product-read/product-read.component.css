@@ -15,8 +15,7 @@ tr:nth-child(even) {
 
 table{
     box-shadow: 0px 1px 2px 1px rgba(164, 164, 164, 0.699);
-    width: 77vw;
-    margin: 20px;
+    width: 100%;
     border-collapse: collapse;
     color: rgb(72, 72, 72);
     

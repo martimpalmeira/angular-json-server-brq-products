@@ -1,4 +1,4 @@
-app-snap-bar{
+app-snackbar-created, app-snackbar-updated, app-snackbar-deleted{
     visibility:hidden;
     position: fixed;
     right: -350px;
@@ -9,9 +9,17 @@ app-snap-bar{
     z-index: 1;
 }
 
+router-outlet{
+    width: 100%;
+}
+
 .show{
     visibility: visible;
     transform: translateX(-370px);
     transition: 500ms;
     opacity: 1;
+}
+
+section{
+    padding: 20px;
 }

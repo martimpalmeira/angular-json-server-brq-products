@@ -1,4 +1,4 @@
-import { SharedServiceService } from 'src/app/services/shared-service.service';
+import { SharedServiceUpdateService } from 'src/app/services/shared-service-update.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from './../../../../services/product.service';
 import { Component, OnInit } from '@angular/core';
@@ -16,7 +16,7 @@ export class ProductUpdateComponent implements OnInit {
   constructor(private productService: ProductService, 
     private router: Router, 
     private rout: ActivatedRoute, 
-    private sharedService: SharedServiceService) { }
+    private sharedServiceUpdate: SharedServiceUpdateService) { }
 
   ngOnInit(): void {
     const id = this.rout.snapshot.paramMap.get('id');
@@ -28,7 +28,7 @@ export class ProductUpdateComponent implements OnInit {
   updateProduct(): void {
     this.productService.update(this.product).subscribe(() => {
       this.router.navigate(['/products']);
-      this.sharedService.event.emit();
+      this.sharedServiceUpdate.event.emit();
     })
   }
 

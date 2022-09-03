@@ -1,3 +1,5 @@
+import { SharedServiceDeleteService } from './../../../services/shared-service-delete.service';
+import { SharedServiceUpdateService } from './../../../services/shared-service-update.service';
 import { ProductCreateComponent } from './product-create/product-create.component';
 import { Component, OnInit } from '@angular/core';
 import { SharedServiceService } from './../../../services/shared-service.service'
@@ -9,24 +11,56 @@ import { SharedServiceService } from './../../../services/shared-service.service
 })
 export class MainComponent implements OnInit {
   
-  constructor(sharedService: SharedServiceService) {
-    sharedService.event.subscribe(() => {
-      this.showSnapBar();
-    })
+  constructor(private sharedService: SharedServiceService, 
+    private sharedServiceUpdate: SharedServiceUpdateService,
+    private sharedServiceDelete: SharedServiceDeleteService) {
+    this.sharedService.event.subscribe(() => {
+      this.showSnackbarCreated();
+    });
+
+    this.sharedServiceUpdate.event.subscribe(() => {
+      this.showSnackbarUpdated();
+    });
+
+    this.sharedServiceDelete.event.subscribe(()=>{
+      this.showSnackbarDeleted();
+    }); 
   }
 
   ngOnInit(): void {
   }
 
-  showSnapBar(): void {
-    const snapBar = document.querySelector('app-snap-bar');
-    snapBar?.classList.add('show');
-    setTimeout(this.removeSnapBar, 2500);
+  showSnackbarCreated(): void {
+    const snackbarCreated = document.querySelector('app-snackbar-created');
+    snackbarCreated?.classList.add('show');
+    setTimeout(this.removeSnackbarCreated, 2500);
   }
 
-  removeSnapBar(): void {
-    const snapBar = document.querySelector('app-snap-bar');
-    snapBar?.classList.remove('show');
+  removeSnackbarCreated(): void {
+    const snackbarCreated = document.querySelector('app-snackbar-created');
+    snackbarCreated?.classList.remove('show');
+  }
+
+  showSnackbarUpdated(): void {
+    const snackbarUpdated = document.querySelector('app-snackbar-updated');
+    snackbarUpdated?.classList.add('show');
+    setTimeout(this.removeSnackbarUpdated, 2500);
+  }
+
+  removeSnackbarUpdated(): void {
+    const snackbarUpdated = document.querySelector('app-snackbar-updated');
+    snackbarUpdated?.classList.remove('show');
+  }
+
+  showSnackbarDeleted(): void {
+    const snackbarDeleted = document.querySelector('app-snackbar-deleted');
+    snackbarDeleted?.classList.add('show');
+    setTimeout(this.removeSnackbarDeleted, 2500);
+  }
+
+  removeSnackbarDeleted(): void {
+    const snackbarDeleted = document.querySelector('app-snackbar-deleted');
+    snackbarDeleted?.classList.remove('show');
   }
 
 }

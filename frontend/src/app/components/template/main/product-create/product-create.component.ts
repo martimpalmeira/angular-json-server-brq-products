@@ -1,5 +1,5 @@
 import { ProductService } from '../../../../services/product.service';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from './product.model';
 import { SharedServiceService } from 'src/app/services/shared-service.service';
@@ -10,8 +10,6 @@ import { SharedServiceService } from 'src/app/services/shared-service.service';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
-
-  @Output() showSnap: EventEmitter<any> = new EventEmitter();
 
   product: Product = {
     name: "",

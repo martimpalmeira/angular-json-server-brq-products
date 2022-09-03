@@ -1,4 +1,6 @@
 <section>
     <router-outlet></router-outlet>
-    <app-snap-bar (removeSnap) = "removeSnapBar()"></app-snap-bar>
+    <app-snackbar-created (removeSnackbarCreated) = "removeSnackbarCreated()"></app-snackbar-created>
+    <app-snackbar-updated (removeSnackbarUpdated) = "removeSnackbarUpdated()"></app-snackbar-updated>
+    <app-snackbar-deleted (removeSnackbarDeleted) = "removeSnackbarDeleted()"></app-snackbar-deleted>
 </section>

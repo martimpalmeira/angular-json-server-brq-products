@@ -1,5 +1,5 @@
 .snackbar{
-    background-color: rgb(78, 167, 70);
+    background-color: rgb(220, 58, 69);
     color: white;
     height: 60px;
     width: 300px;
@@ -31,7 +31,5 @@ img{
     width: 13px;
 }
 
-.remove-snapbar{
-    visibility: hidden;
-}
+
 
